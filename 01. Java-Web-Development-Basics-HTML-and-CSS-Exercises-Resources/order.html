@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <link rel="stylesheet" href="style/form.css">
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+
+<nav>
+    <div class="topnav">
+        <a class="logo" href="index.html"><img src="images/logo.png" alt="beer logo"/></a>
+        <a href="index.html">Home</a>
+        <a href="all-beers.html">See All Beers</a>
+        <a class="active" href="order.html">Order a Beer</a>
+        <a class="right" href="register.html">Register</a>
+        <a class="right" href="login.html">Log in</a>
+    </div>
+</nav>
+
+<main>
+    <h1>Order a Beer</h1>
+    <center>
+        <form>
+            <label>Brand
+                <select>
+                    <option value="0" selected disabled>Select a brand</option>
+                    <option value="1">Corona Extra</option>
+                    <option value="2">Stella Artois</option>
+                    <option value="3">Carlsberg</option>
+                    <option value="4">Heineken</option>
+                </select>
+            </label>
+            <label>Quantity
+                <input type="number" min="1" max="15" placeholder="Enter amount of beers (1-15)">
+            </label>
+            <label>Destination
+                <select>
+                    <option selected disabled>Select a destination</option>
+                    <option value="0">Plovdiv</option>
+                    <option value="1">Sofia</option>
+                    <option value="2">Varna</option>
+                    <option value="3">Burgas</option>
+                    <option value="4">Veliko Tarnovo</option>
+                    <option value="5">Rousse</option>
+                    <option value="6">Pleven</option>
+                    <option value="7">Blagoevgrad</option>
+                    <option value="8">Vratsa</option>
+                    <option value="9">Vidin</option>
+                    <option value="10">Stara Zagora</option>
+                </select>
+            </label>
+            <label>Enter your birth date
+                <input type="text" placeholder="mm/dd/yyyy">
+            </label>
+            <label>Got an opinion, comment, recommendation? Share it with us!
+                <input type="text" placeholder="Share your opinion with us!)">
+            </label>
+            <input type="submit" value="Order">
+        </form>
+    </center>
+</main>
+
+<footer>
+    <hr/>
+    <p><em>&copy; 2020 &ndash; SoftUni Beers</em></p>
+</footer>
+</body>
+</html>
